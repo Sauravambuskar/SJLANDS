@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJA Land Developer - Premier Real Estate Solutions in India</title>
+    <meta name="description" content="SJA Land Developer - Leading real estate company in India specializing in premium land development, residential projects, and commercial properties across major cities.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SJA LAND</h2>
+                <span>DEVELOPER</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <span class="hero-tagline">India's Premier Real Estate Developer</span>
+                    <h1 class="hero-title">Building Dreams, Creating Communities</h1>
+                    <p class="hero-subtitle">Premium land development and real estate solutions across India with over a decade of excellence</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+                        <a href="#virtual-tour" class="btn btn-secondary">Virtual Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <span class="hero-tagline">Luxury Living Redefined</span>
+                    <h1 class="hero-title">Premium Residences Across India</h1>
+                    <p class="hero-subtitle">From Mumbai's skyline to Bangalore's tech corridors - discover your perfect home</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View Properties</a>
+                        <a href="contact.html" class="btn btn-secondary">Schedule Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <span class="hero-tagline">Commercial Excellence</span>
+                    <h1 class="hero-title">Modern Business Spaces</h1>
+                    <p class="hero-subtitle">State-of-the-art commercial developments in India's prime business districts</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">Commercial Projects</a>
+                        <a href="services.html" class="btn btn-secondary">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-navigation">
+            <button class="hero-nav-btn hero-prev">&#8249;</button>
+            <button class="hero-nav-btn hero-next">&#8250;</button>
+        </div>
+        <div class="hero-indicators">
+            <button class="hero-indicator active" data-slide="0"></button>
+            <button class="hero-indicator" data-slide="1"></button>
+            <button class="hero-indicator" data-slide="2"></button>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Quick Search Section -->
+    <section class="quick-search">
+        <div class="container">
+            <div class="search-header">
+                <h2>Find Your Dream Property</h2>
+                <p>Discover premium properties across India's major cities</p>
+            </div>
+            <div class="search-container">
+                <div class="search-filters">
+                    <button class="filter-btn active" data-filter="all">All Properties</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                </div>
+                <form class="quick-search-form">
+                    <div class="search-row">
+                        <div class="search-field">
+                            <label for="location">Location</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select City</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi NCR</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="pune">Pune</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                        </div>
+                        <div class="search-field">
+                            <label for="property-type">Property Type</label>
+                            <select id="property-type" name="property-type">
+                                <option value="">Any Type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="office">Office Space</option>
+                                <option value="retail">Retail Space</option>
+                                <option value="land">Land/Plot</option>
+                            </select>
+                        </div>
+                        <div class="search-field">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Any Budget</option>
+                                <option value="50-100">₹50L - ₹1Cr</option>
+                                <option value="100-250">₹1Cr - ₹2.5Cr</option>
+                                <option value="250-500">₹2.5Cr - ₹5Cr</option>
+                                <option value="500+">₹5Cr+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                            Search Properties
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Cities Across India</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>Happy Families</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="section-content">
+                <div class="content-left">
+                    <h2>Leading Real Estate Development Since 2008</h2>
+                    <p>SJA Land Developer has been at the forefront of transforming landscapes into thriving communities across India. Our commitment to quality, innovation, and sustainability has made us the preferred choice for premium real estate solutions in major Indian cities.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Sustainable Development Practices</li>
+                        <li><i class="fas fa-check"></i> Premium Location Selection</li>
+                        <li><i class="fas fa-check"></i> Modern Infrastructure</li>
+                        <li><i class="fas fa-check"></i> 24/7 Customer Support</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="content-right">
+                    <div class="image-grid">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern architecture" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Residential development" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Our Pride</span>
+                <h2>Iconic Properties</h2>
+                <p>Discover our latest premium developments and investment opportunities across India</p>
+            </div>
+            <div class="projects-carousel">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Emerald Heights" loading="lazy">
+                        <div class="project-status available">Available</div>
+                        <div class="project-badge">Premium</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="emerald-heights">View Gallery</button>
+                            <button class="virtual-tour">Virtual Tour</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-location-badge">
+                            <i class="fas fa-map-marker-alt"></i> Gurgaon, Delhi NCR
+                        </div>
+                        <h3>Emerald Heights</h3>
+                        <p class="project-tagline">Where luxury meets lifestyle</p>
+                        <p class="project-description">Luxury residential towers with panoramic city views and world-class amenities.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <span class="highlight-number">2-4</span>
+                                <span class="highlight-label">BHK</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">1200+</span>
+                                <span class="highlight-label">Sq.ft</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">50+</span>
+                                <span class="highlight-label">Amenities</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <span><i class="fas fa-car"></i> Premium Parking</span>
+                            <span><i class="fas fa-swimming-pool"></i> Infinity Pool</span>
+                            <span><i class="fas fa-dumbbell"></i> Fitness Center</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="price-section">
+                                <span class="price-label">Starting from</span>
+                                <span class="project-price">₹2.5 Crores*</span>
+                                <span class="emi-info">EMI from ₹1,98,000/month</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="projects.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-outline callback-btn">Request Callback</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Garden Villas" loading="lazy">
+                        <div class="project-status sold-out">Sold Out</div>
+                        <div class="project-badge">Luxury</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="garden-villas">View Gallery</button>
+                            <button class="virtual-tour">Virtual Tour</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-location-badge">
+                            <i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore
+                        </div>
+                        <h3>Garden Villas</h3>
+                        <p class="project-tagline">Exclusive villa community</p>
+                        <p class="project-description">Exclusive villas surrounded by lush gardens and recreational facilities.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <span class="highlight-number">3-5</span>
+                                <span class="highlight-label">BHK</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">2500+</span>
+                                <span class="highlight-label">Sq.ft</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">100%</span>
+                                <span class="highlight-label">Sold</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <span><i class="fas fa-tree"></i> Private Garden</span>
+                            <span><i class="fas fa-shield-alt"></i> Gated Security</span>
+                            <span><i class="fas fa-car"></i> 2 Car Parking</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="price-section">
+                                <span class="price-label">Sold from</span>
+                                <span class="project-price">₹4.5 Crores*</span>
+                                <span class="emi-info">Next launch in Q2 2025</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="projects.html" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-outline notify-btn">Notify Similar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Business Hub" loading="lazy">
+                        <div class="project-status upcoming">Coming Soon</div>
+                        <div class="project-badge">Commercial</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="business-hub">View Gallery</button>
+                            <button class="virtual-tour">Virtual Tour</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-location-badge">
+                            <i class="fas fa-map-marker-alt"></i> Bandra Kurla Complex, Mumbai
+                        </div>
+                        <h3>Business Hub Central</h3>
+                        <p class="project-tagline">Where business meets excellence</p>
+                        <p class="project-description">State-of-the-art commercial complex designed for modern businesses.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">
+                                <span class="highlight-number">500+</span>
+                                <span class="highlight-label">Offices</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">2M+</span>
+                                <span class="highlight-label">Sq.ft</span>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">Q1</span>
+                                <span class="highlight-label">2025</span>
+                            </div>
+                        </div>
+                        <div class="project-features">
+                            <span><i class="fas fa-wifi"></i> High-Speed Internet</span>
+                            <span><i class="fas fa-coffee"></i> Business Lounge</span>
+                            <span><i class="fas fa-car"></i> Multi-level Parking</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="price-section">
+                                <span class="price-label">Starting from</span>
+                                <span class="project-price">₹15,000/sq ft*</span>
+                                <span class="emi-info">Pre-booking discount 10%</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="projects.html" class="btn btn-primary">Pre-Book</a>
+                                <button class="btn btn-outline interest-btn">Register Interest</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-navigation">
+                <button class="carousel-btn carousel-prev">&#8249;</button>
+                <button class="carousel-btn carousel-next">&#8250;</button>
+            </div>
+            <div class="section-footer">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive real estate solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Land Development</h3>
+                    <p>Transform raw land into thriving communities with our expert development services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Projects</h3>
+                    <p>Create dream homes with our premium residential development solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Investment Consulting</h3>
+                    <p>Get expert advice on real estate investments and market opportunities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Complete property management services for maximum returns on your investment.</p>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="services.html" class="btn btn-outline">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Legacy -->
+    <section class="company-legacy">
+        <div class="container">
+            <div class="legacy-content">
+                <div class="legacy-text">
+                    <span class="section-tagline">Our Legacy</span>
+                    <h2>A solid foundation across 15+ cities in India</h2>
+                    <p>With over 15 years of excellence in real estate development, SJA Land Developer has created landmarks that define modern living. Our commitment to quality, innovation, and customer satisfaction has made us one of India's most trusted real estate brands.</p>
+                    <div class="legacy-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-number">50M+</div>
+                            <div class="highlight-text">Sq.ft. Developed</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">500+</div>
+                            <div class="highlight-text">Projects Delivered</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-number">15+</div>
+                            <div class="highlight-text">Years of Excellence</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="legacy-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Company Legacy" loading="lazy">
+                    <div class="legacy-badge">
+                        <div class="badge-content">
+                            <span class="badge-number">15+</span>
+                            <span class="badge-text">Years of Building Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">What Our Clients Say</span>
+                <h2>Trusted by Thousands of Families</h2>
+                <p>Hear from our satisfied customers who have made their dream homes with us</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"SJA Land Developer exceeded our expectations. The quality of construction and attention to detail in our Gurgaon home is exceptional. The entire process was smooth and transparent."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Client" loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <h4>Rajesh Sharma</h4>
+                                <span>Emerald Heights Resident</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Our experience with SJA has been outstanding. From site selection to possession, their team guided us through every step. Our villa in Bangalore is everything we dreamed of."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Client" loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <h4>Priya Nair</h4>
+                                <span>Garden Villas Resident</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Investing in SJA's commercial project was the best decision. The returns have been excellent and the property management service is top-notch. Highly recommended!"</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Client" loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <h4>Amit Patel</h4>
+                                <span>Business Hub Investor</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Real Estate Journey?</h2>
+                <p>Let's discuss your vision and turn it into reality with our expert team</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+                    <a href="projects.html" class="btn btn-secondary">Explore Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="awards-recognition">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Our Achievements</span>
+                <h2>Awards & Recognition</h2>
+                <p>Celebrating excellence in real estate development across India</p>
+            </div>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Best Developer 2023</h3>
+                    <p>Real Estate Excellence Awards</p>
+                    <span class="award-year">2023</span>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Sustainable Development</h3>
+                    <p>Green Building Council India</p>
+                    <span class="award-year">2023</span>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Customer Choice Award</h3>
+                    <p>Indian Real Estate Awards</p>
+                    <span class="award-year">2022</span>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Innovation in Design</h3>
+                    <p>Architecture & Design Awards</p>
+                    <span class="award-year">2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>SJA LAND</h3>
+                        <span>DEVELOPER</span>
+                    </div>
+                    <p>Building dreams and creating communities with premium real estate solutions since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Our Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Land Development</a></li>
+                        <li><a href="services.html">Residential Projects</a></li>
+                        <li><a href="services.html">Commercial Development</a></li>
+                        <li><a href="services.html">Investment Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9876-543-210</p>
+                        <p><i class="fas fa-envelope"></i> info@sjaland.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Cyber City, Gurgaon, Haryana</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SJA Land Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

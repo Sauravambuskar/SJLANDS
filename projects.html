@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - SJA Land Developer | Real Estate Projects Across India</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SJA LAND</h2>
+                <span>DEVELOPER</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Discover premium developments and investment opportunities</p>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="luxury residential">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Emerald Heights">
+                        <div class="project-status available">Available</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="emerald-heights">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Emerald Heights</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Gurgaon, Delhi NCR</p>
+                        <p class="project-description">Luxury residential towers with panoramic city views and world-class amenities including gym, pool, and concierge services.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-bed"></i> 2-4 BHK</span>
+                            <span><i class="fas fa-car"></i> Parking</span>
+                            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-price">Starting from ₹2.5 Crores</span>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="luxury residential">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Garden Villas">
+                        <div class="project-status sold-out">Sold Out</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="garden-villas">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Garden Villas</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore</p>
+                        <p class="project-description">Exclusive villas surrounded by lush gardens and recreational facilities in a peaceful suburban setting.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-home"></i> 3-5 BHK</span>
+                            <span><i class="fas fa-tree"></i> Garden</span>
+                            <span><i class="fas fa-shield-alt"></i> Security</span>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-price">Starting from ₹4.5 Crores</span>
+                            <button class="btn btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="commercial upcoming">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Business Hub">
+                        <div class="project-status upcoming">Coming Soon</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="business-hub">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Hub Central</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Bandra Kurla Complex, Mumbai</p>
+                        <p class="project-description">State-of-the-art commercial complex designed for modern businesses with flexible office spaces.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-building"></i> Office</span>
+                            <span><i class="fas fa-wifi"></i> High-Speed Internet</span>
+                            <span><i class="fas fa-coffee"></i> Cafeteria</span>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-price">From ₹15,000/sq ft</span>
+                            <button class="btn btn-primary">Pre-Book</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunrise Apartments">
+                        <div class="project-status available">Available</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="sunrise-apartments">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sunrise Apartments</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Electronic City, Bangalore</p>
+                        <p class="project-description">Modern apartments with excellent connectivity and affordable pricing for young professionals.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-bed"></i> 1-3 BHK</span>
+                            <span><i class="fas fa-dumbbell"></i> Gym</span>
+                            <span><i class="fas fa-bus"></i> Metro</span>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-price">Starting from ₹1.2 Crores</span>
+                            <button class="btn btn-primary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="luxury upcoming">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Platinum Towers">
+                        <div class="project-status upcoming">Coming Soon</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="platinum-towers">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Platinum Towers</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Powai, Mumbai</p>
+                        <p class="project-description">Ultra-luxury high-rise with sky lounges, infinity pool, and world-class amenities.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-bed"></i> 3-5 BHK</span>
+                            <span><i class="fas fa-car"></i> Valet</span>
+                            <span><i class="fas fa-spa"></i> Spa</span>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-price">Starting from ₹8 Crores</span>
+                            <button class="btn btn-primary">Register Interest</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Park">
+                        <div class="project-status available">Available</div>
+                        <div class="project-overlay">
+                            <button class="view-gallery" data-project="tech-park">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Innovation Tech Park</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Hitec City, Hyderabad</p>
+                        <p class="project-description">Modern tech park with flexible office spaces, conference facilities, and innovation labs.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-laptop"></i> Tech Ready</span>
+                            <span><i class="fas fa-users"></i> Conference</span>
+                            <span><i class="fas fa-restaurant"></i> Food Court</span>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-price">From ₹20,000/sq ft</span>
+                            <button class="btn btn-primary">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>SJA LAND</h3>
+                        <span>DEVELOPER</span>
+                    </div>
+                    <p>Building dreams and creating communities since 2008.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9876-543-210</p>
+                        <p><i class="fas fa-envelope"></i> info@sjaland.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SJA Land Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
